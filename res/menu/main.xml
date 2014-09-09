@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<item
+        android:id="@+id/menu_sethybrid"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Satellite Mode"/>
+<item
+        android:id="@+id/menu_setnormal"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Map Mode"/>
+    <item
+        android:id="@+id/menu_showtraffic"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Show Traffic"/>
+    <item
+        android:id="@+id/menu_broadcast"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Broadcast Location"/>
+    <item
+        android:id="@+id/findPlaces"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Find Nearby"/>
+    
+    
+   
+    <item
+        android:id="@+id/menu_showcurrentlocation"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Show Current Location"/>
+   
+    <item
+        android:id="@+id/findppl"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/findppl"/>
+    <item
+        android:id="@+id/exit"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Exit"/>
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lastup">Updated:</string>
+    <string name="lastlatlng">Last Location: </string>
+	<string name="app_name">FindME</string>
+	<string name="findppl">Find Friends</string>
+    <string name="title_main">FindME</string>
+	<string name="address">Address:</string>
+    <string name="enable_gps">Enable GPS</string>
+    <string name="enable_gps_dialog">GPS provider not enabled. Would you like to enable it?</string>
+    <string name="latlng">Current Location:</string>
+    <string name="unknown">--Unknown--</string>
+    <string name="no_gps_support">GPS provider not supported</string>
+    <string name="no_network_support">Network provider not supported</string>    
+   <string name="action_settings">Settings</string>
+   <string name="hello_world">Hello world!</string>
+   <string name="download_button">Open Map</string>
+  
+   
+    <string name="menu_settings">Settings</string>
+    <string name="str_btn_find">Find</string>
+   <string name="download_text">Press to open map</string>
+   <string-array  name="Names">
+       <item>kavish</item>
+       <item>Shekhar</item>
+       <item>amit</item>
+   </string-array>
+   <string-array  name="Lats">
+       <item>23.8430325</item>
+       <item>23.84496656</item>
+       <item>23.844775828939305</item>
+   </string-array>
+   <string-array  name="Lans">
+       <item>91.4187032</item>
+       <item>91.42122515</item>
+       <item>91.42116719687651</item>
+   </string-array>
+   <string-array name="place_type">
+        <item>airport</item>
+        <item>atm</item>
+        <item>bank</item>
+        <item>bus_station</item>
+        <item>church</item>
+        <item>doctor</item>
+        <item>hospital</item>
+        <item>mosque</item>
+        <item>movie_theater</item>
+        <item>hindu_temple</item>
+        <item>restaurant</item>
+    </string-array>
+ 
+    <string-array name="place_type_name">
+        <item>Airport</item>
+        <item>ATM</item>
+        <item>Bank</item>
+        <item>Bus Station</item>
+        <item>Church</item>
+        <item>Doctor</item>
+        <item>Hospital</item>
+        <item>Mosque</item>
+        <item>Movie Theater</item>
+        <item>Hindu Temple</item>
+        <item>Restaurant</item>
+    </string-array>
+</resources>

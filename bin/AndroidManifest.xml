@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.findme"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <permission
+        android:name="com.example.findme.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE" />
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Required to check user activity -->
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher2"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.example.findme.Register"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+        <activity
+            android:name="com.example.findme.Home"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme" >
+            
+        </activity>
+        <activity
+            android:name="com.example.findme.Attribution"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+        <activity
+            android:name="com.example.findme.Photo"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+        <activity
+            android:name="com.example.findme.Place"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+        <activity
+            android:name="com.example.findme.PlaceDialogFragment"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+          <activity
+            android:name="com.example.findme.PlaceJSONParser"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+        <activity
+            android:name="com.example.findme.Broadcast_dialog"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.example.findme.Fetching"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.example.findme.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.example.android.location.ActivityRecognitionIntentService"
+            android:exported="false"
+            android:label="@string/app_name" >
+        </service>
+        <!-- Goolge API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDOF9ESXQOYw10A7VZ_hkfN_7qLDmFiTgg" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"
+    android:id="@+id/TableLayout01">
+    <TableRow 
+    	android:id="@+id/TableRow01">
+	<TextView android:id="@+id/label_latlng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LatLng" />
+	<TextView
+        android:id="@+id/latlng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/TableRow03">
+        <TextView android:id="@+id/label_address"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        	android:text="Address" />
+	<TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/TableRow04">
+    <TextView android:id="@+id/label_lastup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lastupdate" />
+	<TextView
+        android:id="@+id/lastup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </TableRow>
+
+    <LinearLayout>
+        <fragment 
+          android:id="@+id/map1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.MapFragment"/> 
+    
+        </LinearLayout>
+  
+</TableLayout>
